@@ -1,0 +1,42 @@
+.w-base {
+    @apply w-[88%]
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 16px;
+    margin-bottom: 50px;
+    font-weight: bold;
+    color: #7c7c7c;
+}
+
+.swiper-button-prev {
+    left: 0px;
+}
+
+.swiper-button-next {
+    right: 0px;
+}
+
+.sell-btn {
+    border-radius: 50em;
+    border: 6px solid transparent;
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+    border-top-color: #23E5DB;
+    border-bottom-color: #FFCE32;
+    border-left-color: #FFCE32;
+    border-right-color: #3A77FF;
+    box-shadow: 0px 3px 10px 1px #7c7c7c6c;
+}
+
+@media screen and (max-width: 750px) {
+    .modal-box {
+        height: 'fit';
+    }
+}
+@media screen and (min-width: 850px) {
+    .modal-box {
+        min-height: 50vh;
+    }
+}
