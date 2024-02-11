@@ -105,6 +105,17 @@ const AddDonation = () => {
                     </div>
                     <div className="form-control mb-5">
                         <label className="label">
+                            <span className="label-text">Phone Number *</span>
+                        </label>
+                        <input {...register('PhoneNumber', { required: true })} type="text" className="input input-bordered rounded-md border-gray-400" />
+                        <small className='text-xs text-accent flex justify-between mt-1'>
+                            <span>Mention Your phone Number</span>
+                            <span>0 / 10</span>
+                        </small>
+                    </div>
+
+                    <div className="form-control mb-5">
+                        <label className="label">
                             <span className="label-text">Description *</span>
                         </label>
                         <textarea {...register('desc', { required: true })} className="textarea textarea-bordered rounded-md h-28 border-gray-400"></textarea>

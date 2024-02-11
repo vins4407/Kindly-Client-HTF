@@ -8,7 +8,8 @@ import { GoSearch } from 'react-icons/go';
 const Home = () => {
     const navigate = useNavigate();
     const { setSearchText } = useSearch();
-    const handleSearch = (e) => {
+    const handleSearch = (e) => {file:///home/vinayak1506/Downloads/private.key
+    
         e.preventDefault();
         navigate("/")
         setSearchText(e.target.search.value);

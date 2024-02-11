@@ -11,6 +11,7 @@ import { IoIosArrowDown } from 'react-icons/io';
 import { SlArrowDown } from 'react-icons/sl';
 import { useSearch } from '../../contexts/SearchProvider';
 import DonateBtn from '../../components/DonateBtn';
+import logo from '../../assets/kindly_logo.png'
 
 
 const Navbar = ({ setLoginModal }) => {
@@ -29,8 +30,7 @@ const Navbar = ({ setLoginModal }) => {
                 <div className='flex-1 mr-2  '>
 
                     <Link onClick={() => setSearchText("")} className='mr-3' to="/">
-                        {/* <img className="w-14 md:w-20" src={logo} alt="" /> */}
-                        Kindly
+                        <img className="w-14 md:w-20" src={logo} alt="" />
                     </Link>
 
                     <div className="hidden lg:block dropdown ml-3 mr-4">
@@ -123,7 +123,7 @@ const Navbar = ({ setLoginModal }) => {
                     </ul>
                 </div>
             </nav>
-            <div className='h-1 w-full bg-base-100 drop-shadow-sm'></div>
+            <div className='h-1 w-full bg-[#8abdb6] drop-shadow-sm'></div>
         </header>
     );
 };

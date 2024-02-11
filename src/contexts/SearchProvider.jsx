@@ -1,4 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
+import { data } from 'autoprefixer';
 import React, { createContext, useContext, useState } from 'react';
 
 const SearchContext = createContext();
@@ -11,7 +12,9 @@ const SearchProvider = ({ children }) => {
             .then(res => {
                 return res.json()
             })
+        
     })
+    console.log("this is data producst"+data)
     return (
         <SearchContext.Provider value={{ setSearchText, products, isLoading }}>
             {children}

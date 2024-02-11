@@ -9,7 +9,7 @@ const ChatsPage = () => {
   const { username, secret } = state;
 
   return (
-    <div className=" h-96" >
+    <div style={{height:"75vh"}} className=" m-5   border-r-8" >
       <PrettyChatWindow
         projectId={'4d43f041-6603-4a3e-9353-bb8fd025e914'}
         username={username}
